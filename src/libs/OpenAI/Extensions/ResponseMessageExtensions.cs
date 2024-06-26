@@ -1,4 +1,5 @@
-﻿using OpenAI.Chat;
+﻿using System;
+using OpenAI.Chat;
 
 namespace tryAGI.OpenAI;
 

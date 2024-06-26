@@ -81,7 +81,7 @@ namespace OpenAI.Chat
         /// <param name="toolCalls"></param>
         public Message(Role role, string content, IEnumerable<Tool> toolCalls) : this(role, content)
         {
-            this.ToolCalls = [.. toolCalls];
+            this.ToolCalls = toolCalls.ToArray();
         }
 
         /// <summary>
